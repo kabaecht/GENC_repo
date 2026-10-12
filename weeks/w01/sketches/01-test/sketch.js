@@ -3,12 +3,16 @@ function setup() {
 }
 
 function draw() {
-  background(244, 243, 239)
-  noStroke()
-  fill(72, 94, 108)
-  const x = mouseX >= 0 && mouseX <= width ? mouseX : width / 2
-  const y = mouseY >= 0 && mouseY <= height ? mouseY : height / 2
-  circle(x, y, 48)
+  background(200, 200, 200)
+  noFill()
+  strokeWeight(50)
+  circle(0, 200, 400,)
+    circle(200, 0, 400,)
+    circle(200, 0, 400,)
+    circle(400, 200, 400,)
+    circle(200, 400, 400,)
+
+  
 }
 
 function windowResized() {

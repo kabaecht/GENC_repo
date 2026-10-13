@@ -3,18 +3,19 @@ function setup() {
 }
 
 function draw() {
-  background(200, 200, 200)
-  noFill()
-  strokeWeight(50)
-  circle(0, 200, 400,)
-    circle(200, 0, 400,)
-    circle(200, 0, 400,)
-    circle(400, 200, 400,)
-    circle(200, 400, 400,)
+  background(255, 255, 255)
+  fill(0, 0, 0)
 
-  
+  for (let y = 0; y < height; y += 30) {
+    for (let x = 0; x < width; x += 30) {
+      let size = 10 + x * 0.05
+      rect(x, y, size)
+      let column = x / 30
+      if (column % 2 === 0) {
+  // one state
+} else {
+  // another state
 }
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight)
+    }
+  }
 }
